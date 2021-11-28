@@ -1,0 +1,472 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+ul,
+li,
+ol{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.form_one{
+  position: absolute;
+  width: 560px;
+  height: 732.06px;
+  left: 140px;
+  top: 167.95px;
+
+  background: #FFFFFF;
+  box-shadow: 0px 4px 64px rgba(44, 66, 255, 0.3);
+  border-radius: 10px;
+}
+.form_title{
+  position: absolute;
+  width: 242px;
+  height: 49.6px;
+  left: 299px;
+  top: 205.7px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 63px;
+  /* or 157% */
+
+  text-align: center;
+
+  color: #2061E6;
+}
+.close{
+  position: absolute;
+  width: 45.02px;
+  height: 45.02px;
+  left: 644.98px;
+  top: 179.89px;
+  cursor: pointer;
+}
+.step{
+  position: absolute;
+
+  left: 359px;
+  top: 266.3px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 22px;
+  /* identical to box height, or 116% */
+
+  text-align: center;
+
+  color: #545454;
+}
+.pok{
+  /* Union */
+
+
+  position: absolute;
+  width: 87.03px;
+  height: 31.42px;
+  left: 376.48px;
+  top: 311.3px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+.circ{
+  /* Ellipse 31 */
+  position: absolute;
+  width: 14.78px;
+  height: 14.78px;
+  left: 384.94px;
+  top: 319.62px;
+}
+input{
+  position: absolute;
+}
+.name{
+  /* Rectangle 1016 */
+  left: 233.2px;
+  top: 376.14px;
+}
+
+.name,
+.surname,
+.e-mail,
+.number{
+  position: absolute;
+  width: 373.6px;
+  height: 62.67px;
+
+  border: 1px solid #2061E6;
+  box-sizing: border-box;
+  outline: none;
+  padding-left: 14.18px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  /* identical to box height */
+
+
+  color: #666;
+}
+.surname{
+  left: 233.2px;
+  top: 461.82px;
+}
+.e-mail{
+  left: 233.2px;
+  top: 547.49px;
+}
+.number{
+  left: 233.2px;
+  top: 633.17px;
+}
+::placeholder{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  /* identical to box height */
+
+
+  color: #BDBDBD;
+}
+.next{
+  /* Rectangle 1016 */
+
+
+  position: absolute;
+  width: 373.6px;
+  height: 62.67px;
+  left: 233.2px;
+  top: 716.84px;
+
+  background: #2061E6;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+}
+.form_two{
+  /* Rectangle 1017 */
+
+
+  position: absolute;
+  width: 560px;
+  height: 892.06px;
+  left: 800px;
+  top: 167.95px;
+
+  background: #FFFFFF;
+  box-shadow: 0px 4px 64px rgba(44, 66, 255, 0.3);
+  border-radius: 10px;
+}
+._two{
+  position: absolute;
+}
+.close_two{
+  position: absolute;
+  margin: 179.89px 150px 0 1304.98px;
+  cursor: pointer;
+}
+.form_title_two{
+  position: absolute;
+  margin: 205.7px 299px 0 959px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 63px;
+  /* or 157% */
+
+  text-align: center;
+
+  color: #2061E6;
+
+}
+.step_two{
+  position: absolute;
+
+  margin: 266.3px 367.5px 0 1020px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 22px;
+  /* identical to box height, or 116% */
+
+  text-align: center;
+
+  color: #545454;
+
+}
+.last_circ{
+  position: absolute;
+  margin: 319.62px 440px 0 1045.22px;
+}
+.circ_two{
+  position: absolute;
+  margin: 319.62px 385.28px 0 1099.94px;
+}
+.pok_two{
+  position: absolute;
+  margin: 312.3px 376.49px 0 1036.48px;
+}
+.city{
+  position: absolute;
+  width: 373.6px;
+  height: 62.67px;
+
+  border: 1px solid #2061E6;
+  box-sizing: border-box;
+  outline: none;
+  padding-left: 14.18px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  /* identical to box height */
+
+
+  color: #666;
+
+  margin: 376.14px 233.2px 0 893.2px;
+}
+.mel{
+  display: flex;
+  /* Rectangle 1017 */
+  margin: 460px 233.2px 0 893.2px;
+
+  position: absolute;
+  width: 373.6px;
+  height: 62.67px;
+
+  border: 1px solid #2061E6;
+  box-sizing: border-box;
+}
+.girl{
+  cursor: pointer;
+  padding: 20.84px 0px 20.84px 39px;
+  /* Я женщина */
+  width: 186.8px;
+  height: 62.67px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  /* identical to box height */
+
+
+  color: #fff;
+
+  background: #2061E6;
+}
+.man{
+  cursor: pointer;
+  padding: 20.84px 0px 20.84px 39px;
+  /* Я мужчина */
+  width: 186.8px;
+  height: 62.67px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  /* identical to box height */
+
+
+  color: #545454;
+
+}
+.task{
+  display: flex;
+}
+.text{
+  /* Rectangle 1021 */
+
+
+  position: absolute;
+  width: 28.37px;
+  height: 28.37px;
+
+  border: 1px solid #2061E6;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+.text_one{
+  margin: 545.67px 578.49px 0 893.14px;
+}
+._test{
+  /* Подтверждаю, что мне исполнилось 18 лет */
+
+
+  position: absolute;
+  width: 330.51px;
+  height: 22px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height, or 137% */
+
+
+  color: #545454;
+}
+.what{
+  width: 28.37px;
+  height: 28.37px;
+
+  box-sizing: border-box;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.text_1,
+.text_2,
+.text_3{
+  /* Подтверждаю, что мне исполнилось 18 лет */
+
+
+  position: absolute;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height, or 137% */
+
+
+  color: #545454;
+
+}
+.text_1{
+  margin: 550.48px 233.2px 0 936.29px;
+}
+.text_2{
+  margin: 601.84px 233.2px 0 936.29px;
+}
+.text_3{
+  margin: 717.65px 233.2px 0 936.29px;
+}
+.reg{
+  position: absolute;
+  width: 373.6px;
+  height: 62.67px;
+
+  margin: 947.85px 331.5px 0 893.2px;
+
+  background: #2061E6;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+}
+.captcha{
+  position: absolute;
+  width: 373.63px;
+  height: 97.36px;
+
+  margin: 806.65px 233.2px 0 893.17px;
+}
